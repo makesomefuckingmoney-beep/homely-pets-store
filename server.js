@@ -63,7 +63,7 @@ app.post(
 app.use(express.json({ limit: "256kb" }));
 app.use(express.static(path.join(__dirname)));
 
-app.get("/api/health", (_req, res) => {
+app.get("/api/health", (req, res) => {
   const notifications = configuredChannels();
   res.json({
     ok: true,
@@ -72,6 +72,7 @@ app.get("/api/health", (_req, res) => {
     notifications: notifications.length ? notifications : "not configured",
     domain: domainConfig.domain,
     primaryUrl: domainConfig.primaryUrl,
+    siteUrl: resolveSiteUrl(req),
   });
 });
 

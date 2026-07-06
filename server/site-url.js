@@ -1,6 +1,13 @@
 /** Resolve public site URL (Render, custom domain, or local .env) */
+function normalizeUrl(url) {
+  const u = String(url || "").trim().replace(/\/$/, "");
+  if (!u) return "";
+  if (u.startsWith("http://") || u.startsWith("https://")) return u;
+  return `https://${u}`;
+}
+
 function resolveSiteUrl(req) {
-  const fromEnv = (process.env.SITE_URL || "").replace(/\/$/, "");
+  const fromEnv = normalizeUrl(process.env.SITE_URL);
   const isLocal =
     !fromEnv ||
     fromEnv.includes("localhost") ||

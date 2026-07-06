@@ -21,5 +21,4 @@ services:
       - key: STRIPE_SECRET_KEY
         sync: false
       - key: SITE_URL
-        sync: false
-        # Production: https://www.homelypets.co.uk
+        value: https://www.homelypets.co.uk

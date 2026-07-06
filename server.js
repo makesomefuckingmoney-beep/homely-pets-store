@@ -11,6 +11,7 @@ const {
 const { configuredChannels, sendTestNotification } = require("./server/notify");
 
 const domainConfig = require("./server/domain");
+const { resolveSiteUrl } = require("./server/site-url");
 const PORT = process.env.PORT || 4242;
 const SITE_URL = (process.env.SITE_URL || `http://localhost:${PORT}`).replace(/\/$/, "");
 
@@ -163,11 +164,13 @@ app.post("/api/create-checkout-session", async (req, res) => {
       });
     }
 
+    const siteUrl = resolveSiteUrl(req);
+
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
       line_items,
-      success_url: `${SITE_URL}/checkout-success.html?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${SITE_URL}/checkout-cancel.html`,
+      success_url: `${siteUrl}/checkout-success.html?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${siteUrl}/checkout-cancel.html`,
       billing_address_collection: "required",
       shipping_address_collection: { allowed_countries: ["GB"] },
       phone_number_collection: { enabled: true },

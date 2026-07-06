@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All products — Homely Pets</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="images/homely-pets-logo.png" type="image/png" />
+</head>
+<body class="page-products-index">
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo"><img src="images/homely-pets-logo.png" alt="Homely Pets" width="160" height="44" /></a>
+      <nav class="nav">
+        <a href="index.html#shop">Shop</a>
+        <a href="products.html" aria-current="page">All products</a>
+      </nav>
+      <div class="header__actions">
+        <a href="index.html#shop" class="btn btn--primary btn--sm">Back to shop</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section section--cream">
+    <div class="container">
+      <header class="section__head section__head--shop">
+        <p class="eyebrow"><span class="eyebrow__line"></span> Full catalogue</p>
+        <h1>All 64 products</h1>
+        <p class="section__sub">Every SKU with its own product page — one-time, 3 for 1, or monthly subscription.</p>
+      </header>
+      <div class="products-index-grid" id="products-index-grid" aria-live="polite"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__bottom">
+      <p>&copy; 2026 Homely Pets</p>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="labels-manifest.js"></script>
+  <script src="cart.js"></script>
+  <script>
+    (function () {
+      const grid = document.getElementById("products-index-grid");
+      const products = window.HOMELY_PRODUCTS || [];
+      if (!grid || !products.length) {
+        grid.innerHTML = "<p>Products could not load.</p>";
+        return;
+      }
+      grid.innerHTML = products
+        .map((p) => {
+          const img = window.HOMELY_LABELS?.[p.id] || p.img;
+          const title = p.name.indexOf(" — ") > 0 ? p.name.slice(0, p.name.indexOf(" — ")) : p.name;
+          return `
+            <a href="product.html?id=${encodeURIComponent(p.id)}" class="products-index-card">
+              <img src="images/${img}" alt="" loading="lazy" />
+              <span class="products-index-card__type">${p.type} · ${p.pet === "dog" ? "Dog" : "Cat"}</span>
+              <strong>${title}</strong>
+              <span class="products-index-card__price">${formatGBP(p.price)}</span>
+            </a>`;
+        })
+        .join("");
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order confirmed — Homely Pets</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-product page-success">
+  <main class="section section--cream success-page" id="success-root">
+    <div class="container success-page__inner">
+      <p class="eyebrow"><span class="eyebrow__line eyebrow__line--center"></span> Thank you</p>
+      <h1>Payment received</h1>
+
+      <p class="success-page__loading" id="success-loading">Creating your order &amp; tracking details…</p>
+      <p class="success-page__error" id="success-error" hidden role="alert"></p>
+
+      <div class="success-card is-hidden" id="success-details">
+        <p>Your homely order is on its way.</p>
+        <dl class="success-card__meta">
+          <div><dt>Order</dt><dd id="success-order-num">—</dd></div>
+          <div><dt>Tracking</dt><dd><code id="success-tracking-num">—</code></dd></div>
+          <div><dt>Status</dt><dd id="success-status">—</dd></div>
+          <div><dt>Estimated delivery</dt><dd id="success-eta">—</dd></div>
+        </dl>
+        <div class="success-card__actions">
+          <a href="track.html" id="success-track-link" class="btn btn--primary">Track delivery</a>
+          <a href="index.html#shop" class="btn btn--outline">Continue shopping</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="checkout-success.js"></script>
+</body>
+</html>

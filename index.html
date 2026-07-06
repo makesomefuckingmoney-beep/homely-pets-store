@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homely Pets — Luxury Strength Nutrition</title>
+  <meta name="description" content="Homely Pets delivers luxury pet nutrition built for strength, vitality, and whole-body health." />
+  <link rel="canonical" href="https://www.homelypets.co.uk/" />
+  <meta property="og:url" content="https://www.homelypets.co.uk/" />
+  <meta property="og:site_name" content="Homely Pets" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="images/homely-pets-logo.png" type="image/png" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="announcement">
+    <span>Premium strength formulas · 3 for 1 on selected lines</span>
+    <span class="announcement__dot">◆</span>
+    <span>Subscribe &amp; save 15% · Free delivery over £45</span>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="Homely Pets home">
+        <img src="images/homely-pets-logo.png" alt="Homely Pets" width="160" height="44" />
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#shop">Shop</a>
+        <a href="products.html">All products</a>
+        <a href="#about">Story</a>
+        <a href="#packaging">Packaging</a>
+        <a href="#subscribe">Subscribe</a>
+        <a href="track.html">Track order</a>
+      </nav>
+      <div class="header__actions">
+        <button type="button" class="icon-btn" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3-3"/></svg>
+        </button>
+        <button type="button" class="btn btn--cart" id="cart-btn" aria-label="Cart, 0 items">
+          <span>Bag</span>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--compact">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__blob hero__blob--1"></div>
+        <div class="hero__blob hero__blob--2"></div>
+      </div>
+      <div class="container hero__grid">
+        <div class="hero__copy reveal">
+          <p class="eyebrow"><span class="eyebrow__line"></span> Luxury strength nutrition</p>
+          <h1>Built for <em>strength</em>.<br />Designed for vitality.</h1>
+          <p class="lead">High-protein, vet-aware recipes for muscle tone, resilient immunity, and whole-body health.</p>
+          <div class="hero__cta">
+            <a href="#shop" class="btn btn--primary">Shop all products</a>
+            <a href="#subscribe" class="btn btn--ghost-arrow">Subscribe <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero__stats">
+            <div class="stat">
+              <span class="stat__num">66</span>
+              <span class="stat__label">Products</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">90%</span>
+              <span class="stat__label">Animal protein+</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">15%</span>
+              <span class="stat__label">Subscribe &amp; save</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__visual reveal reveal--delay">
+          <div class="hero__frame">
+            <img src="images/homely-pets-dry-food-bag.png" alt="Homely Pets adult dog food" class="hero__product hero__product--main" />
+          </div>
+          <div class="hero__frame hero__frame--float">
+            <img src="images/homely-pets-wet-food-packaging.png" alt="Homely Pets wet food" class="hero__product hero__product--alt" />
+          </div>
+          <span class="hero__tag">High-protein · Joint &amp; gut support</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="shop" class="shop section shop--primary section--cream">
+      <div class="container">
+        <header class="section__head section__head--shop reveal">
+          <p class="eyebrow"><span class="eyebrow__line"></span> Shop the range</p>
+          <h2>Elite daily nutrition for strength &amp; longevity</h2>
+          <p class="section__sub">Dog and cat food by life stage — puppy, adult, senior, competition bulking, snacks, and chew toys.</p>
+        </header>
+
+
+        <div class="catalog-toolbar reveal">
+          <div class="catalog-filters" id="catalog-filters" role="tablist" aria-label="Filter products"></div>
+          <p class="catalog-count" id="catalog-count"></p>
+        </div>
+
+        <div class="catalog-sections" id="catalog-sections" aria-live="polite"></div>
+
+        <p class="catalog-note reveal">Built in the style of top premium pet brands: high-protein recipes, life-stage formulas, gut and joint support, and subscription-ready wellness bundles.</p>
+      </div>
+    </section>
+
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee__inner">
+        <div class="marquee__track">
+          <span>Natural ingredients</span><span class="marquee__sep">✦</span>
+          <span>Resealable packs</span><span class="marquee__sep">✦</span>
+          <span>3 for 1 deals</span><span class="marquee__sep">✦</span>
+          <span>Vet-advised formulas</span><span class="marquee__sep">✦</span>
+          <span>Subscribe &amp; save 15%</span><span class="marquee__sep">✦</span>
+          <span>Natural ingredients</span><span class="marquee__sep">✦</span>
+          <span>Resealable packs</span><span class="marquee__sep">✦</span>
+          <span>3 for 1 deals</span><span class="marquee__sep">✦</span>
+          <span>Vet-advised formulas</span><span class="marquee__sep">✦</span>
+          <span>Subscribe &amp; save 15%</span><span class="marquee__sep">✦</span>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="values">
+      <div class="container values__grid reveal">
+        <div class="value-card">
+          <span class="value-card__icon">01</span>
+          <h3>Clean power</h3>
+          <p>Transparent, high-quality ingredients selected for lean strength and sustained energy.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-card__icon">02</span>
+          <h3>Digestive resilience</h3>
+          <p>Gut-friendly blends with targeted fibres and probiotic support for stable digestion.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-card__icon">03</span>
+          <h3>Joint &amp; mobility</h3>
+          <p>Glucosamine-forward nutrition and functional oils for confident movement.</p>
+        </div>
+        <div class="value-card value-card--highlight">
+          <span class="value-card__icon">04</span>
+          <h3>Whole-body health</h3>
+          <p>Skin, coat, immunity, digestion and muscle support in one premium system.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="container about__grid">
+        <figure class="about__visual reveal">
+          <div class="about__frame">
+            <img src="images/homely-pets-packaging-mailer.png" alt="Homely Pets mailer packaging" />
+          </div>
+          <span class="about__caption">Unboxing, reimagined</span>
+        </figure>
+        <div class="about__copy reveal reveal--delay">
+          <p class="eyebrow"><span class="eyebrow__line"></span> Our story</p>
+          <h2>Strong-brand nutrition.<br />Clinical-level standards.</h2>
+          <p class="about__text">Homely Pets is designed as a luxury strength brand: evidence-led formulas, premium packaging, and a clear health architecture from protein quality to micronutrient balance.</p>
+          <a href="#shop" class="btn btn--primary">Explore the range</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="packaging" class="packaging section section--cream">
+      <div class="container">
+        <header class="section__head section__head--center reveal">
+          <p class="eyebrow"><span class="eyebrow__line eyebrow__line--center"></span> Packaging</p>
+          <h2>Packaging that signals power and health</h2>
+        </header>
+        <div class="packaging__grid reveal">
+          <article class="pack-card">
+            <div class="pack-card__img">
+              <img src="images/homely-pets-dry-food-bag.png" alt="Dry food bag" />
+            </div>
+            <div class="pack-card__text">
+              <span class="pack-card__num">I</span>
+              <h3>Strength bags</h3>
+              <p>Structured, resealable packs engineered for freshness, protein integrity, and shelf authority.</p>
+            </div>
+          </article>
+          <article class="pack-card pack-card--lift">
+            <div class="pack-card__img">
+              <img src="images/homely-pets-wet-food-packaging.png" alt="Wet pouches" />
+            </div>
+            <div class="pack-card__text">
+              <span class="pack-card__num">II</span>
+              <h3>Performance pouches</h3>
+              <p>Precise portions for hydration and nutrient density, ideal for daily rotation feeding.</p>
+            </div>
+          </article>
+          <article class="pack-card">
+            <div class="pack-card__img">
+              <img src="images/homely-pets-packaging-gift-box.png" alt="Gift box" />
+            </div>
+            <div class="pack-card__text">
+              <span class="pack-card__num">III</span>
+              <h3>Health system boxes</h3>
+              <p>Premium bundle presentation for supplementation, routines, and long-term customer retention.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="subscribe" class="subscribe section">
+      <div class="container">
+        <div class="subscribe__card reveal">
+          <div class="subscribe__copy">
+            <p class="eyebrow eyebrow--on-dark"><span class="eyebrow__line"></span> Subscribe</p>
+            <h2>Never break the health routine</h2>
+            <p>Monthly subscription bundles delivered to your door — save 15%, with Apple Pay, Klarna, or card at checkout.</p>
+            <form class="subscribe__form" id="subscribe-form">
+              <label for="email" class="sr-only">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your email" required autocomplete="email" />
+              <button type="submit" class="btn btn--cream">Join the list</button>
+            </form>
+            <p class="subscribe__note" id="subscribe-msg" role="status"></p>
+          </div>
+          <div class="subscribe__visual">
+            <div class="subscribe__product">
+              <img src="images/homely-pets-packaging-gift-box.png" alt="Homely Pets gift box" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__top">
+      <div class="footer__brand">
+        <img src="images/homely-pets-logo.png" alt="Homely Pets" width="130" />
+        <p>Luxury nutrition for stronger pets, healthier bodies, and longer active years.</p>
+      </div>
+      <nav class="footer__nav">
+        <div>
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#shop">All food</a></li>
+            <li><a href="#shop" data-filter="dogs">Dogs</a></li>
+            <li><a href="#shop" data-filter="cats">Cats</a></li>
+            <li><a href="#shop" data-filter="dog-competition">Competition dogs</a></li>
+            <li><a href="#shop" data-filter="dog-snacks">Dog snacks</a></li>
+            <li><a href="#shop" data-filter="cat-snacks">Cat snacks</a></li>
+            <li><a href="#shop" data-filter="cat-toys">Cat toys</a></li>
+            <li><a href="products.html">All 64 products</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <ul>
+            <li><a href="track.html">Track order</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Social</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">TikTok</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <p>&copy; 2026 Homely Pets</p>
+      <p class="footer__demo">Secure checkout · Stripe</p>
+    </div>
+  </footer>
+
+  <aside class="cart-drawer" id="cart-drawer" aria-hidden="true">
+    <div class="cart-drawer__panel">
+      <header class="cart-drawer__head">
+        <h2>Your bag</h2>
+        <button type="button" class="cart-drawer__close" id="cart-close" aria-label="Close">&times;</button>
+      </header>
+      <ul class="cart-drawer__items" id="cart-items"></ul>
+      <p class="cart-drawer__empty" id="cart-empty">Your bag is empty — discover something homely.</p>
+      <footer class="cart-drawer__foot">
+        <p class="cart-drawer__total">Subtotal <strong id="cart-total">£0.00</strong></p>
+        <p class="cart-drawer__error" id="checkout-error" role="alert"></p>
+        <button type="button" id="checkout-btn" class="btn btn--primary btn--block" disabled>Checkout securely</button>
+      </footer>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay" hidden></div>
+
+  <script src="products.js"></script>
+  <script src="labels-manifest.js"></script>
+  <script src="cart.js"></script>
+  <script src="payments.js"></script>
+  <script src="cart-ui.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

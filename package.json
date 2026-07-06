@@ -1,0 +1,20 @@
+{
+  "name": "homely-pets-store",
+  "private": true,
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build:catalog": "node scripts/build-products-json.js",
+    "test:notify": "node scripts/test-notify.js",
+    "domain:dns": "node scripts/print-godaddy-dns.js",
+    "start": "node scripts/build-products-json.js && node server.js",
+    "dev": "node scripts/build-products-json.js && node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "stripe": "^17.5.0"
+  }
+}

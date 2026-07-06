@@ -1,0 +1,10 @@
+{
+  "brand": "Homely Pets",
+  "domain": "homelypets.co.uk",
+  "wwwHost": "www.homelypets.co.uk",
+  "primaryUrl": "https://www.homelypets.co.uk",
+  "registrar": "godaddy",
+  "hosting": "render",
+  "renderServiceHost": "homely-pets-store.onrender.com",
+  "apexRedirect": "https://www.homelypets.co.uk"
+}

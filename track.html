@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Track your order — Homely Pets</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="images/homely-pets-logo.png" type="image/png" />
+</head>
+<body class="page-track">
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <img src="images/homely-pets-logo.png" alt="Homely Pets" width="160" height="44" />
+      </a>
+      <nav class="nav">
+        <a href="index.html#shop">Shop</a>
+        <a href="products.html">All products</a>
+        <a href="track.html" aria-current="page">Track order</a>
+      </nav>
+      <div class="header__actions">
+        <a href="index.html#shop" class="btn btn--primary btn--sm">Continue shopping</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section section--cream track-page">
+    <div class="container track-page__inner">
+      <header class="section__head">
+        <p class="eyebrow"><span class="eyebrow__line"></span> Delivery</p>
+        <h1>Track your order</h1>
+        <p class="section__sub">Enter your order number and email from checkout.</p>
+      </header>
+
+      <form class="track-form" id="track-form">
+        <label>
+          <span>Order number</span>
+          <input type="text" name="order" id="track-order" placeholder="HP-123456" required autocomplete="off" />
+        </label>
+        <label>
+          <span>Email address</span>
+          <input type="email" name="email" id="track-email" placeholder="you@example.com" required autocomplete="email" />
+        </label>
+        <button type="submit" class="btn btn--primary">Track delivery</button>
+        <p class="track-form__error" id="track-error" role="alert" hidden></p>
+      </form>
+
+      <div class="track-result is-hidden" id="track-result" aria-live="polite"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__bottom">
+      <p>&copy; 2026 Homely Pets</p>
+      <p class="footer__demo">Secure checkout · Stripe</p>
+    </div>
+  </footer>
+
+  <script src="track.js"></script>
+</body>
+</html>

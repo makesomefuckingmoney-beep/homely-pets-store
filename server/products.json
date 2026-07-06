@@ -1,0 +1,386 @@
+[
+  {
+    "id": "dog-puppy-dry-salmon",
+    "name": "Puppy Dry — Salmon & Potato (2kg)",
+    "type": "Dry food",
+    "price": 27.9
+  },
+  {
+    "id": "dog-puppy-dry-chicken",
+    "name": "Puppy Dry — Chicken & Rice (2kg)",
+    "type": "Dry food",
+    "price": 26.5
+  },
+  {
+    "id": "dog-puppy-wet-pate",
+    "name": "Puppy Wet — Chicken Paté (10 pack)",
+    "type": "Wet food",
+    "price": 15.9
+  },
+  {
+    "id": "dog-puppy-wet-beef",
+    "name": "Puppy Wet — Beef & Carrot Stew (8 pack)",
+    "type": "Wet food",
+    "price": 17.5
+  },
+  {
+    "id": "dog-adult-dry-chicken-2",
+    "name": "Adult Dry — Chicken & Sweet Potato (2kg)",
+    "type": "Dry food",
+    "price": 24.9
+  },
+  {
+    "id": "dog-adult-dry-chicken-6",
+    "name": "Adult Dry — Chicken & Sweet Potato (6kg)",
+    "type": "Dry food",
+    "price": 54.9
+  },
+  {
+    "id": "dog-adult-dry-lamb",
+    "name": "Adult Dry — Lamb & Brown Rice (2kg)",
+    "type": "Dry food",
+    "price": 26.5
+  },
+  {
+    "id": "dog-adult-dry-beef",
+    "name": "Adult Dry — Beef & Barley (2kg)",
+    "type": "Dry food",
+    "price": 25.5
+  },
+  {
+    "id": "dog-adult-dry-duck",
+    "name": "Adult Dry — Grain-Free Duck & Parsnip (2kg)",
+    "type": "Dry food",
+    "price": 31.9
+  },
+  {
+    "id": "dog-adult-dry-large",
+    "name": "Adult Dry — Large Breed Turkey & Oats (3kg)",
+    "type": "Dry food",
+    "price": 29.9
+  },
+  {
+    "id": "dog-adult-dry-small",
+    "name": "Adult Dry — Small Breed Chicken & Quinoa (1.5kg)",
+    "type": "Dry food",
+    "price": 22.9
+  },
+  {
+    "id": "dog-adult-wet-salmon",
+    "name": "Adult Wet — Salmon & Pea (12 pack)",
+    "type": "Wet food",
+    "price": 18.5
+  },
+  {
+    "id": "dog-adult-wet-turkey",
+    "name": "Adult Wet — Turkey & Cranberry (12 pack)",
+    "type": "Wet food",
+    "price": 17.9
+  },
+  {
+    "id": "dog-adult-wet-beef",
+    "name": "Adult Wet — Beef Stew Trays (7 pack)",
+    "type": "Wet food",
+    "price": 16.5
+  },
+  {
+    "id": "dog-adult-wet-lamb",
+    "name": "Adult Wet — Lamb & Rosemary (12 pack)",
+    "type": "Wet food",
+    "price": 18.9
+  },
+  {
+    "id": "dog-senior-dry-joint",
+    "name": "Senior Dry — Turkey & Joint Care (2kg)",
+    "type": "Dry food",
+    "price": 28.5
+  },
+  {
+    "id": "dog-senior-dry-light",
+    "name": "Senior Dry — Light Turkey & Pumpkin (2kg)",
+    "type": "Dry food",
+    "price": 27.5
+  },
+  {
+    "id": "dog-senior-wet-turkey",
+    "name": "Senior Wet — Turkey & Rice (12 pack)",
+    "type": "Wet food",
+    "price": 17.5
+  },
+  {
+    "id": "dog-senior-wet-fish",
+    "name": "Senior Wet — White Fish & Sweet Potato (12 pack)",
+    "type": "Wet food",
+    "price": 18.9
+  },
+  {
+    "id": "dog-comp-dry-bulk",
+    "name": "Competition Dry — High-Calorie Bulk (4kg)",
+    "type": "Dry food",
+    "price": 44.9
+  },
+  {
+    "id": "dog-comp-dry-power",
+    "name": "Competition Dry — Power Protein 38% (3kg)",
+    "type": "Dry food",
+    "price": 39.9
+  },
+  {
+    "id": "dog-comp-wet-recovery",
+    "name": "Competition Wet — Post-Workout Recovery (12 pack)",
+    "type": "Wet food",
+    "price": 24.5
+  },
+  {
+    "id": "dog-comp-wet-mass",
+    "name": "Competition Wet — Muscle Mass Booster (8 pack)",
+    "type": "Wet food",
+    "price": 22.9
+  },
+  {
+    "id": "dog-comp-supp-gainer",
+    "name": "Competition Supplement — Calorie Gainer Powder",
+    "type": "Supplement",
+    "price": 26.9
+  },
+  {
+    "id": "dog-comp-supp-protein",
+    "name": "Competition Supplement — Whey Protein Topper",
+    "type": "Supplement",
+    "price": 29.5
+  },
+  {
+    "id": "dog-snack-training",
+    "name": "Training Bites — Chicken",
+    "type": "Snacks",
+    "price": 6.5
+  },
+  {
+    "id": "dog-snack-jerky",
+    "name": "Air-Dried Beef Jerky Strips",
+    "type": "Snacks",
+    "price": 9.5
+  },
+  {
+    "id": "dog-snack-dental",
+    "name": "Dental Sticks — Mint & Parsley",
+    "type": "Snacks",
+    "price": 8.9
+  },
+  {
+    "id": "dog-snack-puppy-biscuit",
+    "name": "Puppy Biscuits — Oat & Carrot",
+    "type": "Snacks",
+    "price": 7.5
+  },
+  {
+    "id": "dog-snack-lick",
+    "name": "Lickable Purée — Peanut & Banana (6 pack)",
+    "type": "Snacks",
+    "price": 8.9
+  },
+  {
+    "id": "dog-snack-salmon",
+    "name": "Freeze-Dried Salmon Cubes",
+    "type": "Snacks",
+    "price": 7.9
+  },
+  {
+    "id": "dog-chew-rubber",
+    "name": "Natural Rubber Chew Ring",
+    "type": "Chew toy",
+    "price": 12.5
+  },
+  {
+    "id": "dog-chew-rope",
+    "name": "Cotton Rope Tug — Medium",
+    "type": "Chew toy",
+    "price": 11.9
+  },
+  {
+    "id": "dog-chew-antler",
+    "name": "Split Elk Antler Chew",
+    "type": "Chew toy",
+    "price": 18.9
+  },
+  {
+    "id": "dog-chew-bully",
+    "name": "Odour-Reduced Bully Sticks (6 pack)",
+    "type": "Chew toy",
+    "price": 14.5
+  },
+  {
+    "id": "dog-chew-dental-bone",
+    "name": "Enriched Dental Chew Bone — Large",
+    "type": "Chew toy",
+    "price": 5.5
+  },
+  {
+    "id": "dog-chew-kong",
+    "name": "Stuffable Heavy-Duty Chew Cone",
+    "type": "Chew toy",
+    "price": 15.9
+  },
+  {
+    "id": "cat-kitten-dry-turkey",
+    "name": "Kitten Dry — Turkey & Rice (1kg)",
+    "type": "Dry food",
+    "price": 14.9
+  },
+  {
+    "id": "cat-kitten-dry-chicken",
+    "name": "Kitten Dry — Chicken & Fish (1kg)",
+    "type": "Dry food",
+    "price": 15.5
+  },
+  {
+    "id": "cat-kitten-wet-pate",
+    "name": "Kitten Wet — Turkey & Liver Paté (10 pack)",
+    "type": "Wet food",
+    "price": 14.5
+  },
+  {
+    "id": "cat-kitten-wet-chicken",
+    "name": "Kitten Wet — Chicken Broth Shreds (12 pack)",
+    "type": "Wet food",
+    "price": 15.9
+  },
+  {
+    "id": "cat-adult-dry-fish",
+    "name": "Adult Dry — Chicken & White Fish (1.5kg)",
+    "type": "Dry food",
+    "price": 19.9
+  },
+  {
+    "id": "cat-adult-dry-indoor",
+    "name": "Adult Dry — Indoor Hairball Care (1.5kg)",
+    "type": "Dry food",
+    "price": 21.5
+  },
+  {
+    "id": "cat-adult-dry-salmon",
+    "name": "Adult Dry — Salmon & Sweet Potato (1.5kg)",
+    "type": "Dry food",
+    "price": 20.9
+  },
+  {
+    "id": "cat-adult-dry-urinary",
+    "name": "Adult Dry — Urinary Care Chicken & Cranberry (1.5kg)",
+    "type": "Dry food",
+    "price": 23.9
+  },
+  {
+    "id": "cat-adult-wet-tuna",
+    "name": "Adult Wet — Tuna & Sole (12 pack)",
+    "type": "Wet food",
+    "price": 16.9
+  },
+  {
+    "id": "cat-adult-wet-chicken",
+    "name": "Adult Wet — Chicken Broth Pouches (12 pack)",
+    "type": "Wet food",
+    "price": 15.5
+  },
+  {
+    "id": "cat-adult-wet-duck",
+    "name": "Adult Wet — Duck & Green Bean (12 pack)",
+    "type": "Wet food",
+    "price": 17.9
+  },
+  {
+    "id": "cat-adult-wet-multipack",
+    "name": "Adult Wet — Variety Multipack (24 pack)",
+    "type": "Wet food",
+    "price": 28.9
+  },
+  {
+    "id": "cat-senior-dry-care",
+    "name": "Senior Dry — Chicken & Joint Care (1.5kg)",
+    "type": "Dry food",
+    "price": 22.5
+  },
+  {
+    "id": "cat-senior-wet-salmon",
+    "name": "Senior Wet — Turkey & Salmon (12 pack)",
+    "type": "Wet food",
+    "price": 17.5
+  },
+  {
+    "id": "cat-senior-wet-pate",
+    "name": "Senior Wet — Soft Chicken Paté (12 pack)",
+    "type": "Wet food",
+    "price": 16.9
+  },
+  {
+    "id": "cat-snack-tuna",
+    "name": "Crunchy Treats — Tuna",
+    "type": "Snacks",
+    "price": 4.9
+  },
+  {
+    "id": "cat-snack-dental",
+    "name": "Dental Crunchies — Chicken",
+    "type": "Snacks",
+    "price": 5.9
+  },
+  {
+    "id": "cat-snack-salmon",
+    "name": "Freeze-Dried Salmon Cubes",
+    "type": "Snacks",
+    "price": 7.9
+  },
+  {
+    "id": "cat-snack-lick",
+    "name": "Lickable Treat — Tuna & Anchovy (6 pack)",
+    "type": "Snacks",
+    "price": 7.5
+  },
+  {
+    "id": "cat-snack-bonito",
+    "name": "Bonito Flakes — Sprinkle Topper",
+    "type": "Snacks",
+    "price": 6.9
+  },
+  {
+    "id": "cat-snack-kitten",
+    "name": "Kitten Soft Treats — Chicken & Milk",
+    "type": "Snacks",
+    "price": 5.5
+  },
+  {
+    "id": "cat-toy-wand",
+    "name": "Feather Wand Teaser",
+    "type": "Toy",
+    "price": 9.9
+  },
+  {
+    "id": "cat-toy-mice",
+    "name": "Catnip Mice — 2 Pack",
+    "type": "Toy",
+    "price": 7.5
+  },
+  {
+    "id": "cat-toy-scratch",
+    "name": "Cardboard Scratch Lounge",
+    "type": "Toy",
+    "price": 18.9
+  },
+  {
+    "id": "cat-toy-tunnel",
+    "name": "Collapsible Play Tunnel",
+    "type": "Toy",
+    "price": 16.5
+  },
+  {
+    "id": "cat-toy-ball-track",
+    "name": "Turntable Ball Track Toy",
+    "type": "Toy",
+    "price": 14.9
+  },
+  {
+    "id": "cat-toy-puzzle",
+    "name": "Puzzle Feeder — Slow Eat Maze",
+    "type": "Toy",
+    "price": 13.9
+  }
+]

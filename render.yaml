@@ -1,0 +1,25 @@
+# Render Blueprint — deploy Homely Pets with custom domain support
+# https://render.com/docs/blueprint-spec
+#
+# 1. Push this repo to GitHub
+# 2. Render Dashboard → New → Blueprint → connect repo
+# 3. Set STRIPE_SECRET_KEY and SITE_URL when prompted
+# 4. After deploy: Settings → Custom Domains → add your domain → copy DNS records
+
+services:
+  - type: web
+    name: homely-pets-store
+    runtime: node
+    plan: starter
+    region: frankfurt
+    buildCommand: npm install && npm run build:catalog
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: SITE_URL
+        sync: false
+        # Production: https://www.homelypets.co.uk

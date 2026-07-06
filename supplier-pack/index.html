@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homely Pets — Supplier Brand &amp; Packaging Pack</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root { --moss: #273a2d; --sage: #3f5c46; --gold: #b88a3b; --cream: #f8f4ec; --charcoal: #121714; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Outfit", system-ui, sans-serif; font-weight: 300; color: var(--charcoal); background: var(--cream); line-height: 1.6; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+    h1, h2, h3 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 500; }
+    h1 { font-size: 2.5rem; margin: 0 0 0.25rem; color: var(--moss); }
+    .tagline { color: var(--sage); margin: 0 0 2rem; }
+    .swatches { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1.5rem 0 2.5rem; }
+    .swatch { flex: 1; min-width: 120px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(0,0,0,0.08); }
+    .swatch__color { height: 56px; }
+    .swatch__label { padding: 0.5rem 0.75rem; font-size: 0.75rem; background: #fff; }
+    section { margin-bottom: 3rem; }
+    section h2 { font-size: 1.75rem; color: var(--moss); border-bottom: 2px solid var(--gold); padding-bottom: 0.5rem; margin-bottom: 1.25rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.25rem; }
+    .card { background: #fff; border-radius: 16px; overflow: hidden; border: 1px solid rgba(0,0,0,0.08); }
+    .card img { width: 100%; display: block; aspect-ratio: 4/5; object-fit: cover; }
+    .card__body { padding: 1rem 1.1rem 1.25rem; }
+    .card__body strong { display: block; font-weight: 500; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; background: #fff; border-radius: 12px; overflow: hidden; margin-bottom: 1.5rem; }
+    th, td { text-align: left; padding: 0.75rem 1rem; border-bottom: 1px solid rgba(0,0,0,0.06); }
+    th { background: var(--moss); color: var(--cream); font-weight: 500; }
+    code { background: rgba(0,0,0,0.06); padding: 0.15em 0.4em; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Homely Pets</h1>
+    <p class="tagline">Supplier brand &amp; packaging pack · Luxury strength nutrition</p>
+
+    <section>
+      <h2>Brand colours (print)</h2>
+      <div class="swatches">
+        <div class="swatch"><div class="swatch__color" style="background:#273a2d"></div><div class="swatch__label"><strong>Moss</strong> #273A2D</div></div>
+        <div class="swatch"><div class="swatch__color" style="background:#3f5c46"></div><div class="swatch__label"><strong>Sage</strong> #3F5C46</div></div>
+        <div class="swatch"><div class="swatch__color" style="background:#b88a3b"></div><div class="swatch__label"><strong>Gold</strong> #B88A3B</div></div>
+        <div class="swatch"><div class="swatch__color" style="background:#f8f4ec;border:1px solid #ddd"></div><div class="swatch__label"><strong>Cream</strong> #F8F4EC</div></div>
+        <div class="swatch"><div class="swatch__color" style="background:#121714"></div><div class="swatch__label"><strong>Charcoal</strong> #121714</div></div>
+      </div>
+      <p><strong>Typography:</strong> Headlines — Cormorant Garamond (or similar serif). Body / legal — Outfit or clean sans-serif.</p>
+    </section>
+
+    <section>
+      <h2>01 — Logo files</h2>
+      <p>Folder: <code>01-logo/</code></p>
+      <div class="grid">
+        <article class="card">
+          <img src="01-logo/homely-pets-logo-primary.png" alt="Primary logo" />
+          <div class="card__body"><strong>homely-pets-logo-primary.png</strong> Main lockup for all packaging</div>
+        </article>
+        <article class="card">
+          <img src="01-logo/homely-pets-logo-website.png" alt="Website logo" />
+          <div class="card__body"><strong>homely-pets-logo-website.png</strong> Web / Shopify header</div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Master label style (your design)</h2>
+      <p>Every SKU uses this exact scheme — see <code>BRAND-SCHEME.md</code>. Cream <code>#F5F0E6</code>, forest <code>#2D4A32</code>, gold <code>#C4A052</code>. Only headline, flavour, badge, pet sketch, icons, and weight change.</p>
+      <article class="card" style="max-width:480px;margin-bottom:2rem">
+        <img src="02-product-labels/_MASTER-adult-dog-chicken-sweet-potato.png" alt="Master adult dog label" style="aspect-ratio:auto;object-fit:contain;background:#f0ebe3" />
+        <div class="card__body"><strong>Reference — Adult Dog (master)</strong> Chicken &amp; Sweet Potato · 2kg</div>
+      </article>
+    </section>
+
+    <section>
+      <h2>02 — Product line labels</h2>
+      <p>Folder: <code>02-product-labels/labels/</code> — one flat front-panel PNG per catalogue SKU (64 files, e.g. <code>dog-adult-dry-lamb.png</code>). Life-stage masters in the parent folder are quick references.</p>
+      <table>
+        <thead><tr><th>File</th><th>Product line</th><th>Format</th></tr></thead>
+        <tbody>
+          <tr><td>packaging-dog-adult-dry.png</td><td>Adult Dog · Chicken &amp; Sweet Potato</td><td>Dry bag</td></tr>
+          <tr><td>packaging-dog-puppy-dry-master.png</td><td>Puppy · Salmon &amp; Potato</td><td>Dry bag</td></tr>
+          <tr><td>packaging-dog-senior-dry-master.png</td><td>Senior Dog · Turkey &amp; Joint Care</td><td>Dry bag</td></tr>
+          <tr><td>packaging-dog-competition-dry-master.png</td><td>Competition · High-Calorie Bulk</td><td>Dry bag</td></tr>
+          <tr><td>packaging-cat-adult-dry-master.png</td><td>Adult Cat · Chicken &amp; White Fish</td><td>Dry bag</td></tr>
+          <tr><td>packaging-cat-kitten-dry-master.png</td><td>Kitten · Turkey &amp; Rice</td><td>Dry bag</td></tr>
+          <tr><td>packaging-cat-senior-dry-master.png</td><td>Senior Cat · Joint Care</td><td>Dry bag</td></tr>
+          <tr><td>packaging-wet-dog-pouches.png</td><td>Wet Dog range</td><td>Pouches</td></tr>
+          <tr><td>packaging-wet-cat-pouches.png</td><td>Wet Cat range</td><td>Pouches</td></tr>
+          <tr><td>packaging-treats-snacks.png</td><td>Treats &amp; snacks</td><td>Boxes / mailers</td></tr>
+          <tr><td>packaging-supplements.png</td><td>Performance supplements</td><td>Bottles / cartons</td></tr>
+        </tbody>
+      </table>
+      <div class="grid">
+        <article class="card"><img src="02-product-labels/packaging-dog-adult-dry.png" alt="" /><div class="card__body"><strong>Adult Dog Dry</strong></div></article>
+        <article class="card"><img src="02-product-labels/packaging-dog-puppy-dry-master.png" alt="" /><div class="card__body"><strong>Puppy Dry</strong></div></article>
+        <article class="card"><img src="02-product-labels/packaging-dog-senior-dry-master.png" alt="" /><div class="card__body"><strong>Senior Dog</strong></div></article>
+        <article class="card"><img src="02-product-labels/packaging-dog-competition-dry-master.png" alt="" /><div class="card__body"><strong>Competition Bulk</strong></div></article>
+        <article class="card"><img src="02-product-labels/packaging-cat-adult-dry-master.png" alt="" /><div class="card__body"><strong>Adult Cat</strong></div></article>
+        <article class="card"><img src="02-product-labels/packaging-cat-kitten-dry-master.png" alt="" /><div class="card__body"><strong>Kitten</strong></div></article>
+        <article class="card"><img src="02-product-labels/packaging-cat-senior-dry-master.png" alt="" /><div class="card__body"><strong>Senior Cat</strong></div></article>
+        <article class="card"><img src="02-product-labels/packaging-wet-dog-pouches.png" alt="" /><div class="card__body"><strong>Wet Dog</strong></div></article>
+        <article class="card"><img src="02-product-labels/packaging-wet-cat-pouches.png" alt="" /><div class="card__body"><strong>Wet Cat</strong></div></article>
+        <article class="card"><img src="02-product-labels/packaging-treats-snacks.png" alt="" /><div class="card__body"><strong>Treats</strong></div></article>
+        <article class="card"><img src="02-product-labels/packaging-supplements.png" alt="" /><div class="card__body"><strong>Supplements</strong></div></article>
+      </div>
+    </section>
+
+    <section>
+      <h2>03 — 3D packaging references</h2>
+      <p>Folder: <code>03-packaging-mockups/</code></p>
+      <div class="grid">
+        <article class="card"><img src="03-packaging-mockups/homely-pets-dry-food-bag.png" alt="" /><div class="card__body"><strong>Dry food bag</strong></div></article>
+        <article class="card"><img src="03-packaging-mockups/homely-pets-wet-food-packaging.png" alt="" /><div class="card__body"><strong>Wet pouches</strong></div></article>
+        <article class="card"><img src="03-packaging-mockups/homely-pets-packaging-gift-box.png" alt="" /><div class="card__body"><strong>Gift box</strong></div></article>
+        <article class="card"><img src="03-packaging-mockups/homely-pets-packaging-mailer.png" alt="" /><div class="card__body"><strong>Mailer</strong></div></article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Print notes for supplier</h2>
+      <ul>
+        <li>Request CMYK proofs matched to brand colours above.</li>
+        <li>Add 3mm bleed, dielines, back panel, barcode, and legal text to flat labels.</li>
+        <li>Matte or soft-touch laminate recommended; gold foil optional on Competition line.</li>
+        <li>Website shop links each SKU to <code>product.html?id=…</code> with subscription &amp; 3-for-1 options.</li>
+        <li>Zip archive: <code>Homely-Pets-Supplier-Pack.zip</code> in Downloads (~185MB).</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>

@@ -10,7 +10,7 @@ services:
   - type: web
     name: homely-pets-store
     runtime: node
-    plan: starter
+    plan: free
     region: frankfurt
     buildCommand: npm install && npm run build:catalog
     startCommand: npm start
